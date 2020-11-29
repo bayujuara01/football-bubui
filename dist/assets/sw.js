@@ -1,0 +1,1 @@
+self.addEventListener("push",(t=>{let a;a=t.data?t.data.text():"Push message no payload";let e={body:a,vibrate:[80,50,90],data:{dateOfArrival:Date.now(),primaryKey:1}};t.waitUntil(self.registration.showNotification("Push Notification",e))}));
